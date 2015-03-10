@@ -25,7 +25,9 @@
         "sintret/yii2-chat-adminlte": "dev-master",
         "sintret/yii2-todolist": "dev-master",
         "miloschuman/yii2-highcharts-widget": "*",
-        "sintret/whatsapp": "dev-master"
+        "sintret/whatsapp": "dev-master",
+        "mihaildev/yii2-ckeditor": "*"
+
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
