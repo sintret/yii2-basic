@@ -29,7 +29,7 @@ AppAsset::register($this);
         <div class="wrap">
             <?php
             NavBar::begin([
-                'brandLabel' => 'Alfa Records Management',
+                'brandLabel' => Yii::$app->name,
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -60,7 +60,7 @@ AppAsset::register($this);
 
         <footer class="footer">
             <div class="container">
-                <p class="pull-left">&copy; 2014 - <?= date('Y') ?> Alfarecords, All Rights Reserved</p>
+                <p class="pull-left">&copy;<?= date('Y') ?> sintret technology, All Rights Reserved</p>
                 <p class="pull-right">Design  & programming by <a href="http://sintret.com">sintret.com</a></p>
             </div>
         </footer>
