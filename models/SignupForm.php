@@ -95,11 +95,13 @@ class SignupForm extends Model {
         $response = $sendgrid->send($email);
         //return $response;
         //send whatsapp
-        $number = $setting->whatsappNumber;
-        $app = Yii::$app->name;
-        $password = $setting->whatsappPassword;
-        $w = new WhatsApp($number, $app, $password);
-        $w->send($setting->whatsappSend, $body);
+        if ($setting->whatsappNumber && $setting->whatsappPassword) {
+            $number = $setting->whatsappNumber;
+            $app = Yii::$app->name;
+            $password = $setting->whatsappPassword;
+            $w = new WhatsApp($number, $app, $password);
+            $w->send($setting->whatsappSend, $body);
+        }
     }
 
     public function template($subject, $body, $logo = null) {
