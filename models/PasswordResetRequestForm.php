@@ -72,21 +72,22 @@ class PasswordResetRequestForm extends Model {
             }
 
             if ($user->save()) {
-                $setting = Setting::findOne(1);
-                $usernameSendgrid = $setting->sendgridUsername;
-                $passwordSendgrid = $setting->sendgridPassword;
+                $setting = Setting::find()->where(['id' => 1])->one();
+                $username = $setting->sendgridUsername;
+                $password = $setting->sendgridPassword;
+                $mail_admin = $setting->emailAdmin;
+
+                $sendgrid = new \SendGrid($username, $password, array("turn_off_ssl_verification" => true));
+                $email = new \SendGrid\Email();
+                
                 $mail = $user->email;
                 //echo $user->email;exit(0);
-                $resetLink = Url::to(['site/reset-password', 'token' => $user->password_reset_token]);
-
-
-                $sendgrid = new \SendGrid($usernameSendgrid, $passwordSendgrid, array("turn_off_ssl_verification" => true));
-                $email = new \SendGrid\Email();
+                $resetLink = \Yii::$app->urlManager->createAbsoluteUrl(['site/reset-password', 'token' => $user->password_reset_token]);
                 $body_message = 'Hello ' . Html::encode($user->username) . ', <br>
                 Follow the link below to reset your password:  <br>
                 ' . Html::a(Html::encode($resetLink), $resetLink);
                 $email->addTo($user->email)->
-                        setFrom($setting->emailSupport)->
+                        setFrom($mail_admin)->
                         setSubject('Password reset for ' . \Yii::$app->name)->
                         setHtml($body_message);
 
