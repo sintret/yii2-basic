@@ -2,15 +2,13 @@
     "name": "sintret/yii2-basic",
     "description": "Yii 2 Basic Application Template",
     "keywords": ["yii2", "framework", "basic", "application template","adminlte","chat","todolist","whatsapp"],
-    "homepage": "http://www.yiiframework.com/",
+    "homepage": "http://sintret.com/",
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "issues": "https://github.com/sintret/yii2-basic/issues",
+        "forum": "http://sintret.com/blog_detail/523/yii2_create_project_with_adminlte_basic_and_advanced_easyly",
+        "source": "https://github.com/sintret/yii2-basic"
     },
     "minimum-stability": "stable",
     "require": {
