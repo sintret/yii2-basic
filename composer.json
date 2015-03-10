@@ -1,7 +1,7 @@
 {
-    "name": "yiisoft/yii2-app-basic",
+    "name": "sintret/yii2-basic",
     "description": "Yii 2 Basic Application Template",
-    "keywords": ["yii2", "framework", "basic", "application template"],
+    "keywords": ["yii2", "framework", "basic", "application template","adminlte","chat","todolist","whatsapp"],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
     "license": "BSD-3-Clause",
