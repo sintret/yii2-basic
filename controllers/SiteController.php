@@ -123,7 +123,7 @@ class SiteController extends Controller {
         $this->layout = 'login';
         $model = new PasswordResetRequestForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendMail()) {
+            if ($model->sendEmail()) {
                 Yii::$app->getSession()->setFlash('success', 'Check your email for further instructions.');
                 return $this->redirect(Yii::$app->urlManager->createAbsoluteUrl('site/login'));
             } else {
