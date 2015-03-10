@@ -1,5 +1,5 @@
 # yii2-basic
-Super fast create application using Yii2 Basic Template with feature like adminlte, chat, ckeditor, todolist, whatsapp, graphic, signup form, easy rbac manager using dbmanager and many many feature
+Super fast create application using Yii2 Basic Template with feature like adminlte, chat, whatapp messaging, ckeditor, todolist, whatsapp, graphic, signup form, easy rbac manager using dbmanager and many many feature
 
 Plese read other tutorial at <a href="http://sintret.com/blog_detail/523/yii2_create_project_with_adminlte_basic_and_advanced_easyly">http://sintret.com/blog_detail/523/yii2_create_project_with_adminlte_basic_and_advanced_easyly</a>
 
