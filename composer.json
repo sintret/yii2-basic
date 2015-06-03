@@ -18,7 +18,7 @@
         "yiisoft/yii2-swiftmailer": "*",
         "kartik-v/yii2-detail-view": "*",
         "kartik-v/yii2-password": "dev-master",
-        "sendgrid/sendgrid": "2.1.1",
+        "sendgrid/sendgrid": "~3.2"
         "sintret/yii2-gii-adminlte": "dev-master",
         "sintret/yii2-chat-adminlte": "dev-master",
         "sintret/yii2-todolist": "dev-master",
